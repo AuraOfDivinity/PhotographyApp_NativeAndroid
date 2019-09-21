@@ -29,8 +29,9 @@
         android:id="@+id/deleteArtistPhotograph"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Delete Artist/Photograph"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp"
+        android:onClick="deleteArtistOrPhotograph"
+        android:text="Delete Artist/Photograph" />
 
     <Button
         android:id="@+id/viewPhotographs"

@@ -131,7 +131,20 @@ public class DBHandler  extends SQLiteOpenHelper {
         return photoNameList;
     }
 
+    public void deleteDetails(String tableName, String itemName){
+        SQLiteDatabase db = this.getWritableDatabase();
 
-    
+        if(tableName.equals( ArtistMaster.DATABASE_NAME)){
+            String sqlQuery = "DELETE FROM "+ArtistMaster.DATABASE_NAME+ " WHERE "+ArtistMaster.PHOTOGRAPH_NAME+ " = '" +itemName +"'";
+            db.execSQL(sqlQuery);
+        }
+        else if(tableName.equals(ArtistMaster.ARTIST_DATABASE_NAME)){
+            String sqlQuery = "DELETE FROM "+ArtistMaster.ARTIST_DATABASE_NAME+ " WHERE "+ArtistMaster.ARTIST_NAME+ " = '" +itemName + "' ";
+            db.execSQL(sqlQuery);
+        }
+    }
+
+
+
 
 }

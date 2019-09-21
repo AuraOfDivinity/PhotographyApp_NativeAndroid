@@ -35,6 +35,7 @@ public class AddPhotograph extends AppCompatActivity implements AdapterView.OnIt
         Spinner artistNameSpinner = findViewById(R.id.artistNameSpinner);
 
         photoCategorySpinner.setOnItemSelectedListener(this);
+        artistNameSpinner.setOnItemSelectedListener(this);
 
         ArrayAdapter<String> photoCategoryAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,categoryList);
         ArrayAdapter<String> artistNameAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,artistNames);

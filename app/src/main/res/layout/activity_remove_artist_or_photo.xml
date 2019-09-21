@@ -15,6 +15,7 @@
         android:layout_marginTop="41dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
+        android:onClick="deletePhoto"
         android:text="Delete Photograph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,13 +30,14 @@
         android:layout_marginTop="13dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
+        android:onClick="deleteArtist"
         android:text="Delete Artist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/photoNameSpinnerRemove"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="83dp"
@@ -46,7 +48,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner4"
+        android:id="@+id/artistNameSpinnerRemove"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
@@ -54,7 +56,7 @@
         android:layout_marginRight="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+        app:layout_constraintTop_toBottomOf="@+id/photoNameSpinnerRemove" />
 
     <TextView
         android:id="@+id/textView6"
@@ -66,9 +68,9 @@
         android:layout_marginRight="16dp"
         android:text="Artist Name"
         android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/spinner4"
+        app:layout_constraintEnd_toStartOf="@+id/artistNameSpinnerRemove"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/spinner4" />
+        app:layout_constraintTop_toTopOf="@+id/artistNameSpinnerRemove" />
 
     <TextView
         android:id="@+id/textView5"
@@ -80,8 +82,8 @@
         android:layout_marginRight="15dp"
         android:text="Photo Name"
         android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/spinner3"
+        app:layout_constraintEnd_toStartOf="@+id/photoNameSpinnerRemove"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/spinner3" />
+        app:layout_constraintTop_toTopOf="@+id/photoNameSpinnerRemove" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
